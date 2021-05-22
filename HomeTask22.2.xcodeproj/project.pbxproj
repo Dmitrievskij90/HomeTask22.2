@@ -13,6 +13,9 @@
 		5C4C94272658C13000B67C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4C94252658C13000B67C00 /* Main.storyboard */; };
 		5C4C94292658C13200B67C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4C94282658C13200B67C00 /* Assets.xcassets */; };
 		5C4C942C2658C13200B67C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4C942A2658C13200B67C00 /* LaunchScreen.storyboard */; };
+		5C4C94352658C55A00B67C00 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4C94342658C55A00B67C00 /* SecondViewController.swift */; };
+		5C4C94392658C5F900B67C00 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4C94372658C5F900B67C00 /* CustomTableViewCell.swift */; };
+		5C4C943A2658C5F900B67C00 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4C94382658C5F900B67C00 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5C4C94282658C13200B67C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4C942B2658C13200B67C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C4C942D2658C13200B67C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4C94342658C55A00B67C00 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5C4C94372658C5F900B67C00 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5C4C94382658C5F900B67C00 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				5C4C94282658C13200B67C00 /* Assets.xcassets */,
 				5C4C942A2658C13200B67C00 /* LaunchScreen.storyboard */,
 				5C4C942D2658C13200B67C00 /* Info.plist */,
+				5C4C94342658C55A00B67C00 /* SecondViewController.swift */,
+				5C4C94372658C5F900B67C00 /* CustomTableViewCell.swift */,
+				5C4C94382658C5F900B67C00 /* CustomTableViewCell.xib */,
 			);
 			path = HomeTask22.2;
 			sourceTree = "<group>";
@@ -77,6 +86,7 @@
 				5C4C94182658C13000B67C00 /* Sources */,
 				5C4C94192658C13000B67C00 /* Frameworks */,
 				5C4C941A2658C13000B67C00 /* Resources */,
+				5C4C944526590C3500B67C00 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -126,17 +136,41 @@
 			files = (
 				5C4C942C2658C13200B67C00 /* LaunchScreen.storyboard in Resources */,
 				5C4C94292658C13200B67C00 /* Assets.xcassets in Resources */,
+				5C4C943A2658C5F900B67C00 /* CustomTableViewCell.xib in Resources */,
 				5C4C94272658C13000B67C00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C4C944526590C3500B67C00 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C4C94182658C13000B67C00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4C94352658C55A00B67C00 /* SecondViewController.swift in Sources */,
+				5C4C94392658C5F900B67C00 /* CustomTableViewCell.swift in Sources */,
 				5C4C94242658C13000B67C00 /* ViewController.swift in Sources */,
 				5C4C94202658C13000B67C00 /* AppDelegate.swift in Sources */,
 				5C4C94222658C13000B67C00 /* SceneDelegate.swift in Sources */,
